@@ -1,0 +1,10 @@
+(define version "0.1")
+
+(compile -s -O2 -d1 -S fsnotify.scm -j fsnotify)
+(compile -s -O2 -d0 fsnotify.import.scm)
+(compile -o fsnotify -O2 -d1 fsnotify-cmd.scm)
+
+(install-extension
+ "FSNOTIFY"
+ '("fsnotify.so" "fsnotify.import.so")
+ `((version ,version)))

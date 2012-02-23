@@ -1,0 +1,6 @@
+(
+ (license "BSD")
+ (category testing)
+ (author "Stephen Pedrosa Eilert")
+ (synopsis "Filesystem change detector for Linux and OSX")
+ )
